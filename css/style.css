@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden{
+    display: none !important;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+#box__login--form{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+}
+#box__login--form input[type="text"]{
+    width: 610px;
+    border: none;
+    background: none;
+    font-size: 62px;
+    font-weight: bold;
+    vertical-align: top;
+}
+#box__login--form input[type="text"]::placeholder{
+    color:aliceblue;
+    opacity: 1;
+}
+#box__login--form input[type="submit"]{
+    border: 0;
+    background: none;
+    font-size: 40px;
+    color:#fff;
+    font-weight: bold;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+#box__todo--form{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#box__todo--form input[type="text"]{
+    border:0;
+    background:none;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+#box__todo--form input[type="text"]:focus,
+#box__todo--form input[type="text"]:active{
+    border:0;
+    color:rosybrown;
+}
+
+#box__todo--form input[type="text"]::placeholder{
+    opacity: 1;
+    color:beige;
+}
+
+#todo-list{
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    width: 250px;
+    height: fit-content;
+    border-radius: 10px;
+    background: #fff;
+}
+#todo-list li{
+    padding: 10px;
+    list-style: none;
+}
+
+#todo-list li span{
+    font-size: 18px;
+}
+#todo-list li button{
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: 0;
+}
+
+#clock{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 50px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+#quotes{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color:#fff
+}
+
+#box__weather{
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+#box__weather li{
+    flex-grow: 1;
+    list-style: none;
+}
+#box__weather li span{
+    padding: 10px;
+}
+
+#box__main--weather{
+    display: flex;
+    margin-left: 50px;
+    font-size: 11px;
+    align-items: center;
+}
+#box__main--weather h3{
+    margin-right: 5px;
+    font-size: 68px;
+}
+#box__main--weather .box__weather--wrapper::before{
+    display: block;
+    margin-bottom: 3px;
+    content: " ℃";
+    font-size: 30px;
+    font-weight: 700;
+}
